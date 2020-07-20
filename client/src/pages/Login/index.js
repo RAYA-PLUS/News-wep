@@ -42,7 +42,7 @@ export default class Login extends Component {
 }
 
   render() {
-
+    const { handleLogin } = this.props;
     if (this.state.redirect) {
       console.log('redirected');
       return <Redirect to={this.state.redirect} />

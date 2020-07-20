@@ -49,8 +49,6 @@ router.post("/register", (req, res) => {
     });
   });
 
-  //------------------------------------------- Login --------------------------------------------------//
-
 // @route POST api/users/login
 // @desc Login user and return JWT token
 // @access Public
@@ -70,7 +68,6 @@ router.post("/login", (req, res) => {
       if (!user) {
         return res.status(404).json({ emailnotfound: "Email not found" });
       }
-      
   // Check password
       bcrypt.compare(password, user.password).then(isMatch => {
         if (isMatch) {

@@ -8,14 +8,14 @@
     "start": "node server.js",
     "client": "npm start --prefix client",
     "server": "nodemon server.js",
-    "dev": "concurrently \"nodemon server\" \"cd client && npm start\"",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/News-Web-App/News-Web-App.git"
   },
-  "author": "Team 7",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/News-Web-App/News-Web-App/issues"

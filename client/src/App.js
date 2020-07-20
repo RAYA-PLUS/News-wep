@@ -1,5 +1,5 @@
 import React from 'react';
-
+import ReactDOM from 'react-dom';
 import './App.css';
 import NavBar from './components/navBar/navBar.js';
 import Footer from './components/footer/footer.js';
@@ -16,4 +16,5 @@ function App() {
   );
 }
 
+// ReactDOM.render(<Footer />, document.getElementById('footerDiv'))
 export default App;
