@@ -5,7 +5,7 @@ nav {
   align-self: end;
 margin-right: 29px;
 height: 230px;
-margin-left: 965px;
+margin-left: 1200px;
 }
 
 .Nav__articles {
@@ -16,3 +16,8 @@ margin-left: 965px;
 nav ul a {
   font-size: 27px;
 }
+
+/* #logout{
+  margin-left:1200px;
+} */
+

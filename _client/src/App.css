@@ -1,0 +1,93 @@
+/*
+nav {
+    background-color: rgb(241, 228, 228);
+    overflow: hidden;
+} */
+nav {
+      height: 69px;
+}
+.navbar {
+  margin-bottom: -18px;
+}
+nav ul {
+  list-style: none;
+  height: 40px;
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin-left: 25px;
+  font-size: 20px;
+  color: white;
+}
+/*
+ul {
+  list-style: none;
+} */
+
+.headersCard {
+  margin: 13px;
+  width: 350px;
+  height: 200px;
+  /* background-color: rgb(241, 228, 228); */
+  border-radius: 15px;
+  margin-left: 40px;
+}
+
+
+strong {
+  font-weight: bold;
+}
+
+.headersImg{
+  width: 350px;
+  border-radius: 15px;
+}
+
+.ulContainer {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(196, 193, 193);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: large;
+}
+.articlesImg {
+  width: 25%;
+  height: 118px;
+  display: block;
+  float: left;
+}
+.articlesCard {
+  margin-bottom: 5px;
+  /* display: flex; */
+  width: 900px;
+  height: auto;
+  margin-left: 80px;
+  background-color: rgb(241, 228, 228);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: large;
+}
+.footerDiv {
+  width: auto;
+  margin-top: -20px;
+  background-color: rgb(241, 228, 228);
+  border: 2px solid rgb(241, 228, 228);
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: space-between;
+  bottom: 0;
+  left: 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .SignUp-page__div {
+      width: 50%;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .SignUp-page__div {
+      width: 90%;
+    }
+}
