@@ -34,10 +34,9 @@ class NavBar extends React.Component {
         var req = new Request(url);
         let fetchReq = fetch(req);
         fetchReq.then((data) => {
-            console.log(data.json().then((data1) => {
-                console.log(data1.articles);
+           data.json().then((data1) => {
                 return this.setState({headers: data1.articles});
-            }))
+            })
         })
         //------------ Articles ---------------//
 
@@ -52,10 +51,9 @@ class NavBar extends React.Component {
         let fetchReq2 = fetch(req2);
         // console.log(fetchReq);
         fetchReq2.then((data) => {
-            console.log(data.json().then((data1) => {
-                console.log(data1.articles);
+            data.json().then((data1) => {
                 this.setState({articles: data1.articles});
-            }))
+            })
         })
 	}
     handleArticlesClick(searchValue) {

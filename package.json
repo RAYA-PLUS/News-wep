@@ -22,6 +22,8 @@
   },
   "homepage": "https://github.com/News-Web-App/News-Web-App#readme",
   "dependencies": {
+    "@farbenmeer/react-spring-slider": "^1.2.1",
+    "axios": "^0.19.2",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
     "concurrently": "^5.2.0",
@@ -32,6 +34,11 @@
     "mongoose": "^5.9.24",
     "passport": "^0.4.1",
     "passport-jwt": "^4.0.0",
+    "react-rangeslider": "^2.2.0",
+    "react-slick": "^0.27.0",
+    "react-slider": "^1.0.8",
+    "slick-carousel": "^1.8.1",
+    "slide": "^1.1.6",
     "validator": "^13.1.1"
   },
   "devDependencies": {
