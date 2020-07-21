@@ -16,3 +16,10 @@ margin-left: 965px;
 nav ul a {
   font-size: 27px;
 }
+
+#logout{
+  margin-left:1200px;
+}
+
+  {/* <li className="Nav__login"><NavLink to='/login'>Login</NavLink></li>
+                    <li className="Nav__signup"><NavLink to='/sign-up'>Signup</NavLink></li> */}

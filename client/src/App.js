@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import './App.css';
 import NavBar from './components/navBar/navBar.js';
 import Footer from './components/footer/footer.js';
+import NavBar2 from './components/navBar2/navBar.js';
+
 function App() {
   return (
     <div className="App">

@@ -11,7 +11,7 @@ import {
 import Login from '../../pages/Login'
 import SignUp from '../../pages/SignUp'
 import './style.css'
-
+import NavBar2 from '../navBar2/navBar.js';
 import AllArticles from '../articles/allArticles.js';
 import AllHeaders from '../headers/allHeaders.js';
 import Search from '../search/search.js'
@@ -118,12 +118,14 @@ class NavBar extends React.Component {
                   <li className="brand-logo"></li>
                     <li onClick={this.handleHeadersClick.bind(this)} className="brand-logo"><Link to="/">HeadLines</Link></li>
                     <li onClick={this.handleArticlesClick.bind(this)} className="brand-logo Nav__articles" ><Link  to={this.state.loggedIn ? '/articles' : '/login'}>Articles</Link></li>
-                    <li className="Nav__login"><NavLink to='/login'>Login</NavLink></li>
-                    <li className="Nav__signup"><NavLink to='/sign-up'>Signup</NavLink></li>
-                    <li><button onClick={this.handleLogout.bind(this)}>logout</button></li>
+
+                    <li><button onClick={this.handleLogout.bind(this)} id="logout">logout</button></li>
+        
                 </ul>
                 </div>
+                
             </nav>
+               <div id="navBar2"><NavBar2 /></div>
             <Switch>
                 <Route exact path ='/articles'>
 
@@ -140,7 +142,6 @@ class NavBar extends React.Component {
                 <Route exact path="/sign-up">
                   <SignUp handleLogin={this.handleLogin.bind(this)}/>
                 </Route>
-
             </Switch>
         </Router>
         )
