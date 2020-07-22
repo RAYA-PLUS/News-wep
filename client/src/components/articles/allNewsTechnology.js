@@ -15,10 +15,10 @@ class AllNewsTechnology extends React.Component {
                         {technologyArticles.map((technology) => (
                             <div className="row">
                                 <div className="col-s12-m7">
-                                    <div className="card">
+                                    <div className="card" id="cards">
                                         <li className='technologyCard'>
                                             <div className="card-image">
-                                                <img class='technologyImg' src={technology.urlToImage}></img>
+                                                <img id="cards-img" class='technologyImg' src={technology.urlToImage}></img>
                                             </div>
                                             {/* <strong>Author</strong>: {technology.author}<br></br> */}
                                             {/* <strong>Content</strong>: {technology.content}<br></br> */}

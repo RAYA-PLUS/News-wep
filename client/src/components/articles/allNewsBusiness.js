@@ -14,10 +14,10 @@ class AllNewsBusiness extends React.Component {
                         {businessArticles.map((business) => (
                             <div className="row">
                                 <div className="col-s12-m7">
-                                    <div className="card">
-                                        <li className='businessCard'>
-                                            <div className="card-image">
-                                                <img class='businessImg' src={business.urlToImage}></img>
+                                    <div className="card" id="cards">
+                                        <li className='businessCard' >
+                                            <div className="card-image" >
+                                                <img id="cards-img" class='businessImg' src={business.urlToImage}></img>
                                             </div>
                                             {/* <strong>Author</strong>: {business.author}<br></br> */}
                                             {/* <strong>Content</strong>: {business.content}<br></br> */}

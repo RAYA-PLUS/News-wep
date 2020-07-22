@@ -19,7 +19,7 @@ class AllArticles extends React.Component {
 
                             {/* <strong>Author</strong>: {article.author}<br></br> */}
                             <div className="card-image">
-                            <img class='articlesImg' src={article.urlToImage}></img>
+                              <img id="cards-img"class='articlesImg' src={article.urlToImage}></img>
                             </div>
 
                             <strong>Source</strong>: {article.source.name}<br></br>

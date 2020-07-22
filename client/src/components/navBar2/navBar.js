@@ -20,6 +20,7 @@ class NavBar2 extends React.Component{
     technologyArticles: [],
     scienceArticles:[],
   }
+  
   handleClickGeneral(){
     var url = 'http://newsapi.org/v2/top-headlines?category=general&country=ae&apiKey=cc3bbf80787c4c7ea91e7dcc8b051692';
     var req2 = new Request(url);
@@ -44,18 +45,7 @@ class NavBar2 extends React.Component{
         }))
     })
   }
-  // handleClickBusiness() {
-  //   var url = 'http://newsapi.org/v2/top-headlines?category=business&country=ae&apiKey=cc3bbf80787c4c7ea91e7dcc8b051692';
-  //   var req2 = new Request(url);
-  //   let fetchReq2 = fetch(req2);
-  //   // console.log(fetchReq);
-  //   fetchReq2.then((data) => {
-  //     console.log(data.json().then((data1) => {
-  //       console.log(data1.articles);
-  //       this.setState({ businessArticles: data1.articles });
-  //     }))
-  //   })
-  // }
+ 
   handleClickBusiness() {
     var url = 'http://newsapi.org/v2/top-headlines?category=business&country=ae&apiKey=cc3bbf80787c4c7ea91e7dcc8b051692';
         var req2 = new Request(url);

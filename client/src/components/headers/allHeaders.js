@@ -15,10 +15,10 @@ class AllHeaders extends React.Component {
                         {headers.map((header) => (
                           <div className="row">
                           <div className="col-s12-m7">
-                          <div className="card">
+                          <div className="card" id="cards">
                           <li className='headersCard'>
                           <div className="card-image">
-                            <img class='headersImg' src={header.urlToImage}></img>
+                            <img id ="cards-img" class='headersImg' src={header.urlToImage}></img>
                           </div>
                             {/* <strong>Author</strong>: {header.author}<br></br> */}
                             {/* <strong>Content</strong>: {header.content}<br></br> */}

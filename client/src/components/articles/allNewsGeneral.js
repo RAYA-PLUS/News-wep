@@ -15,10 +15,10 @@ class AllNewsGeneral extends React.Component {
                         {generalArticles.map((general) => (
                             <div className="row">
                                 <div className="col-s12-m7">
-                                    <div className="card">
+                                    <div className="card" id="cards">
                                         <li className='generalCard'>
                                             <div className="card-image">
-                                                <img class='generalImg' src={general.urlToImage}></img>
+                                                <img id="cards-img" class='generalImg' src={general.urlToImage}></img>
                                             </div>
                                             {/* <strong>Author</strong>: {general.author}<br></br> */}
                                             {/* <strong>Content</strong>: {general.content}<br></br> */}

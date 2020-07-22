@@ -30,16 +30,18 @@ ul {
   width: 350px;
   height: 200px;
   /* background-color: rgb(241, 228, 228); */
-  border-radius: 15px;
-  margin-left: 40px;
+    margin-left: 40px;
+    border-radius: 30px;
+    padding: 10px;
 }
 .generalCard {
   margin: 13px;
   width: 350px;
   height: 200px;
   /* background-color: rgb(241, 228, 228); */
-  border-radius: 15px;
-  margin-left: 40px;
+    margin-left: 40px;
+    border-radius: 30px;
+    padding: 25px;
 }
 
 strong {
@@ -48,11 +50,11 @@ strong {
 
 .headersImg{
   width: 350px;
-  border-radius: 15px;
+  border-radius: 30px;
 }
 .generalImg{
   width: 350px;
-  border-radius: 15px;
+  border-radius: 30px;
 }
 
 .businessCard {
@@ -60,12 +62,13 @@ strong {
   width: 350px;
   height: 200px;
   /* background-color: rgb(241, 228, 228); */
-  border-radius: 15px;
-  margin-left: 40px;
+    margin-left: 40px;
+    border-radius: 30px;
+    padding: 8px;
 }
 .businessImg{
   width: 350px;
-  border-radius: 15px;
+  border-radius: 30px;
 }
 .technologyCard {
   margin: 13px;
@@ -74,6 +77,8 @@ strong {
   /* background-color: rgb(241, 228, 228); */
   border-radius: 15px;
   margin-left: 40px;
+    border-radius: 19px;
+    padding: 8px;
 }
 .technologyImg{
   width: 350px;
@@ -86,6 +91,8 @@ strong {
   /* background-color: rgb(241, 228, 228); */
   border-radius: 15px;
   margin-left: 40px;
+    border-radius:50px;
+    padding: 8px;
 }
 .scienceImg{
   width: 350px;
@@ -98,6 +105,8 @@ strong {
   /* background-color: rgb(241, 228, 228); */
   border-radius: 15px;
   margin-left: 40px;
+    border-radius: 19px;
+    padding: 8px;
 }
 .sportImg{
   width: 350px;
@@ -139,6 +148,23 @@ strong {
   bottom: 0;
   left: 0;
 }
+
+#cards {
+  position: relative;
+    margin: .5rem 0 1rem 0;
+    background-color: #fff;
+    -webkit-transition: -webkit-box-shadow .25s;
+    transition: -webkit-box-shadow .25s;
+    transition: box-shadow .25s;
+    transition: box-shadow .25s, -webkit-box-shadow .25s;
+    border-radius: 19px;
+    padding: 8px;
+}
+#cards-img {
+  border-radius: 15px;
+    margin-bottom: 30px;
+}
+    
 
 @media only screen and (max-width: 768px) {
     .SignUp-page__div {

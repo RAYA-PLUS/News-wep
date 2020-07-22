@@ -14,10 +14,10 @@ class AllNewsSports extends React.Component {
                         {sportsArticles.map((sport) => (
                             <div className="row">
                                 <div className="col-s12-m7">
-                                    <div className="card">
+                                    <div className="card" id="cards">
                                         <li className='sportCard'>
                                             <div className="card-image">
-                                                <img class='sportImg' src={sport.urlToImage}></img>
+                                                <img id="cards-img"class='sportImg' src={sport.urlToImage}></img>
                                             </div>
                                             {/* <strong>Author</strong>: {sport.author}<br></br> */}
                                             {/* <strong>Content</strong>: {sport.content}<br></br> */}
