@@ -21,9 +21,7 @@ class NavBar2 extends React.Component{
     scienceArticles:[],
   }
   handleClickGeneral(){
-    var url = 'http://newsapi.org/v2/top-headlines?' +
-    'country=us&' + 'catagory=general&'+
-    'apiKey=cc3bbf80787c4c7ea91e7dcc8b051692';
+    var url = 'http://newsapi.org/v2/top-headlines?category=general&country=ae&apiKey=cc3bbf80787c4c7ea91e7dcc8b051692';
     var req2 = new Request(url);
     let fetchReq2 = fetch(req2);
     // console.log(fetchReq);
@@ -35,9 +33,7 @@ class NavBar2 extends React.Component{
     })
   }
   handleClickSports(){
-    var url = 'http://newsapi.org/v2/top-headlines?' +
-    'country=us&' + 'catagory=sports&'+
-    'apiKey=cc3bbf80787c4c7ea91e7dcc8b051692';
+    var url = 'http://newsapi.org/v2/top-headlines?category=sports&country=ae&apiKey=cc3bbf80787c4c7ea91e7dcc8b051692';
     var req2 = new Request(url);
     let fetchReq2 = fetch(req2);
     // console.log(fetchReq);
@@ -48,25 +44,21 @@ class NavBar2 extends React.Component{
         }))
     })
   }
+  // handleClickBusiness() {
+  //   var url = 'http://newsapi.org/v2/top-headlines?category=business&country=ae&apiKey=cc3bbf80787c4c7ea91e7dcc8b051692';
+  //   var req2 = new Request(url);
+  //   let fetchReq2 = fetch(req2);
+  //   // console.log(fetchReq);
+  //   fetchReq2.then((data) => {
+  //     console.log(data.json().then((data1) => {
+  //       console.log(data1.articles);
+  //       this.setState({ businessArticles: data1.articles });
+  //     }))
+  //   })
+  // }
   handleClickBusiness() {
-    var url = 'http://newsapi.org/v2/top-headlines?' +
-      'country=us&' + 'catagory=business&' +
-      'apiKey=cc3bbf80787c4c7ea91e7dcc8b051692';
-    var req2 = new Request(url);
-    let fetchReq2 = fetch(req2);
-    // console.log(fetchReq);
-    fetchReq2.then((data) => {
-      console.log(data.json().then((data1) => {
-        console.log(data1.articles);
-        this.setState({ businessArticles: data1.articles });
-      }))
-    })
-  }
-  handleClickBusiness() {
-    var url = 'http://newsapi.org/v2/top-headlines?' +
-      'country=us&' + 'catagory=business&' +
-      'apiKey=cc3bbf80787c4c7ea91e7dcc8b051692';
-    var req2 = new Request(url);
+    var url = 'http://newsapi.org/v2/top-headlines?category=business&country=ae&apiKey=cc3bbf80787c4c7ea91e7dcc8b051692';
+        var req2 = new Request(url);
     let fetchReq2 = fetch(req2);
     // console.log(fetchReq);
     fetchReq2.then((data) => {
@@ -77,9 +69,7 @@ class NavBar2 extends React.Component{
     })
   }
   handleClickTechnology() {
-    var url = 'http://newsapi.org/v2/top-headlines?' +
-      'country=us&' + 'catagory=technology&' +
-      'apiKey=cc3bbf80787c4c7ea91e7dcc8b051692';
+    var url = 'http://newsapi.org/v2/top-headlines?category=technology&country=ae&apiKey=cc3bbf80787c4c7ea91e7dcc8b051692';
     var req2 = new Request(url);
     let fetchReq2 = fetch(req2);
     // console.log(fetchReq);
@@ -91,9 +81,7 @@ class NavBar2 extends React.Component{
     })
   }
   handleClickScience() {
-    var url = 'http://newsapi.org/v2/top-headlines?' +
-      'country=us&' + 'catagory=science&' +
-      'apiKey=cc3bbf80787c4c7ea91e7dcc8b051692';
+    var url = 'http://newsapi.org/v2/top-headlines?category=science&country=ae&apiKey=cc3bbf80787c4c7ea91e7dcc8b051692';
     var req2 = new Request(url);
     let fetchReq2 = fetch(req2);
     // console.log(fetchReq);
