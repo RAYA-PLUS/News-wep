@@ -29,7 +29,7 @@ class NavBar extends React.Component {
 
         var url = 'http://newsapi.org/v2/top-headlines?' +
                   'country=us&' +
-                  'apiKey=cc3bbf80787c4c7ea91e7dcc8b051692';
+                  'apiKey=d8f586a00aa04b1eb67e5424cad2a18a';
 
         var req = new Request(url);
         let fetchReq = fetch(req);
@@ -46,7 +46,7 @@ class NavBar extends React.Component {
         'q=' + query + '&' +
         'from=2020-07-12&' +
         'sortBy=popularity&' +
-        'apiKey=cc3bbf80787c4c7ea91e7dcc8b051692';
+        'apiKey=d8f586a00aa04b1eb67e5424cad2a18a';
 
         var req2 = new Request(url2);
         let fetchReq2 = fetch(req2);
@@ -65,7 +65,7 @@ class NavBar extends React.Component {
         'q=' + query + '&' +
         'from=2020-07-12&' +
         'sortBy=popularity&' +
-        'apiKey=cc3bbf80787c4c7ea91e7dcc8b051692';
+        'apiKey=d8f586a00aa04b1eb67e5424cad2a18a';
 
         var req = new Request(url);
         let fetchReq = fetch(req);
@@ -78,9 +78,10 @@ class NavBar extends React.Component {
     }
     handleHeadersClick () {
 
-        var url = 'http://newsapi.org/v2/top-headlines?' +
-            'country=us&' +
-            'apiKey=cc3bbf80787c4c7ea91e7dcc8b051692';
+        var url =
+			"http://newsapi.org/v2/top-headlines?" +
+			"country=us&" +
+			"apiKey=d8f586a00aa04b1eb67e5424cad2a18a";
 
         var req = new Request(url);
         let fetchReq = fetch(req);
@@ -111,41 +112,67 @@ class NavBar extends React.Component {
     }
     render() {
         return (
-        <Router>
-            <nav>
-            <div className="nav-wrapper">
-                <ul>
-                  <li className="brand-logo"></li>
-                    <li onClick={this.handleHeadersClick.bind(this)} className="brand-logo"><Link to="/">HeadLines</Link></li>
-                    <li onClick={this.handleArticlesClick.bind(this)} className="brand-logo Nav__articles" ><Link  to={this.state.loggedIn ? '/articles' : '/login'}>Articles</Link></li>
-                    <li className="Nav__login"><NavLink to='/login'>Login</NavLink></li>
-                    <li className="Nav__signup"><NavLink to='/sign-up'>Signup</NavLink></li>
-                    <li><button onClick={this.handleLogout.bind(this)} id="logout">logout</button></li>
-        
-                </ul>
-                </div>
-                
-            </nav>
-               <div id="navBar2"><NavBar2 /></div>
-            <Switch>
-                <Route exact path ='/articles'>
+			<Router>
+				<nav>
+					<div className="nav-wrapper">
+						<ul>
+							<li className="brand-logo"></li>
+							<li
+								onClick={this.handleHeadersClick.bind(this)}
+								className="brand-logo">
+								<Link to="/headline">HeadLines</Link>
+							</li>
+							<li
+								onClick={this.handleArticlesClick.bind(this)}
+								className="brand-logo Nav__articles">
+								<Link
+									to={
+										this.state.loggedIn
+											? "/articles"
+											: "/login"
+									}>
+									Articles
+								</Link>
+							</li>
+							<li className="Nav__login">
+								<NavLink to="/login">Login</NavLink>
+							</li>
+							<li className="Nav__signup">
+								<NavLink to="/sign-up">Signup</NavLink>
+							</li>
+							<li>
+								<button
+									onClick={this.handleLogout.bind(this)}
+									id="logout">
+									logout
+								</button>
+							</li>
+						</ul>
+					</div>
+				</nav>
+				<div id="navBar2">
+					<NavBar2 />
+				</div>
+				<Switch>
+					<Route exact path="/articles">
+						<Search
+							callbackfromNavBar={this.searchCallback.bind(this)}
+						/>
+						<AllArticles articles={this.state.articles} />
+					</Route>
+					<Route exact path="/headline">
+						<AllHeaders headers={this.state.headers} />
+					</Route>
 
-                    <Search callbackfromNavBar = {this.searchCallback.bind(this)} />
-                    <AllArticles articles = {this.state.articles} />
-                </Route>
-                <Route exact path='/'>
-                    <AllHeaders headers = {this.state.headers} />
-                </Route>
-                  
-                <Route exact path="/login">
-                  <Login handleLogin={this.handleLogin.bind(this)}/>
-                </Route>
-                <Route exact path="/sign-up">
-                  <SignUp handleLogin={this.handleLogin.bind(this)}/>
-                </Route>
-            </Switch>
-        </Router>
-        )
+					<Route exact path="/login">
+						<Login handleLogin={this.handleLogin.bind(this)} />
+					</Route>
+					<Route exact path="/sign-up">
+						<SignUp handleLogin={this.handleLogin.bind(this)} />
+					</Route>
+				</Switch>
+			</Router>
+		);
     }
 }
 
