@@ -33,13 +33,73 @@ ul {
   border-radius: 15px;
   margin-left: 40px;
 }
-
+.generalCard {
+  margin: 13px;
+  width: 350px;
+  height: 200px;
+  /* background-color: rgb(241, 228, 228); */
+  border-radius: 15px;
+  margin-left: 40px;
+}
 
 strong {
   font-weight: bold;
 }
 
 .headersImg{
+  width: 350px;
+  border-radius: 15px;
+}
+.generalImg{
+  width: 350px;
+  border-radius: 15px;
+}
+
+.businessCard {
+  margin: 13px;
+  width: 350px;
+  height: 200px;
+  /* background-color: rgb(241, 228, 228); */
+  border-radius: 15px;
+  margin-left: 40px;
+}
+.businessImg{
+  width: 350px;
+  border-radius: 15px;
+}
+.technologyCard {
+  margin: 13px;
+  width: 350px;
+  height: 200px;
+  /* background-color: rgb(241, 228, 228); */
+  border-radius: 15px;
+  margin-left: 40px;
+}
+.technologyImg{
+  width: 350px;
+  border-radius: 15px;
+}
+.scienceCard {
+  margin: 13px;
+  width: 350px;
+  height: 200px;
+  /* background-color: rgb(241, 228, 228); */
+  border-radius: 15px;
+  margin-left: 40px;
+}
+.scienceImg{
+  width: 350px;
+  border-radius: 15px;
+}
+.sportCard {
+  margin: 13px;
+  width: 350px;
+  height: 200px;
+  /* background-color: rgb(241, 228, 228); */
+  border-radius: 15px;
+  margin-left: 40px;
+}
+.sportImg{
   width: 350px;
   border-radius: 15px;
 }

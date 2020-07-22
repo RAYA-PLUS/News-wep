@@ -22,7 +22,7 @@ class NavBar2 extends React.Component{
   }
   handleClickGeneral(){
     var url = 'http://newsapi.org/v2/top-headlines?' +
-    'country=ae&' + 'catagory=general&'+
+    'country=us&' + 'catagory=general&'+
     'apiKey=cc3bbf80787c4c7ea91e7dcc8b051692';
     var req2 = new Request(url);
     let fetchReq2 = fetch(req2);
@@ -36,7 +36,7 @@ class NavBar2 extends React.Component{
   }
   handleClickSports(){
     var url = 'http://newsapi.org/v2/top-headlines?' +
-    'country=ae&' + 'catagory=sports&'+
+    'country=us&' + 'catagory=sports&'+
     'apiKey=cc3bbf80787c4c7ea91e7dcc8b051692';
     var req2 = new Request(url);
     let fetchReq2 = fetch(req2);
@@ -50,7 +50,7 @@ class NavBar2 extends React.Component{
   }
   handleClickBusiness() {
     var url = 'http://newsapi.org/v2/top-headlines?' +
-      'country=ae&' + 'catagory=business&' +
+      'country=us&' + 'catagory=business&' +
       'apiKey=cc3bbf80787c4c7ea91e7dcc8b051692';
     var req2 = new Request(url);
     let fetchReq2 = fetch(req2);
@@ -64,7 +64,7 @@ class NavBar2 extends React.Component{
   }
   handleClickBusiness() {
     var url = 'http://newsapi.org/v2/top-headlines?' +
-      'country=ae&' + 'catagory=business&' +
+      'country=us&' + 'catagory=business&' +
       'apiKey=cc3bbf80787c4c7ea91e7dcc8b051692';
     var req2 = new Request(url);
     let fetchReq2 = fetch(req2);
@@ -78,7 +78,7 @@ class NavBar2 extends React.Component{
   }
   handleClickTechnology() {
     var url = 'http://newsapi.org/v2/top-headlines?' +
-      'country=ae&' + 'catagory=technology&' +
+      'country=us&' + 'catagory=technology&' +
       'apiKey=cc3bbf80787c4c7ea91e7dcc8b051692';
     var req2 = new Request(url);
     let fetchReq2 = fetch(req2);
@@ -92,7 +92,7 @@ class NavBar2 extends React.Component{
   }
   handleClickScience() {
     var url = 'http://newsapi.org/v2/top-headlines?' +
-      'country=ae&' + 'catagory=science&' +
+      'country=us&' + 'catagory=science&' +
       'apiKey=cc3bbf80787c4c7ea91e7dcc8b051692';
     var req2 = new Request(url);
     let fetchReq2 = fetch(req2);
