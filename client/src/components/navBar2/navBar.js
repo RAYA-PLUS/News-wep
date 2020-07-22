@@ -2,7 +2,7 @@ import React from 'react';
 import AllNewsGeneral from '../articles/allNewsGeneral.js'
 import AllNewsBusiness from '../articles/allNewsBusiness.js'
 import AllNewsScience from '../articles/allNewsScience.js'
-// import AllNewsSports from '../articles/allNewsSports.js'
+import AllNewsSports from '../articles/allNewsSports.js'
 import AllNewsTechnology from '../articles/allNewsTechnology.js'
 import './style.css';
 import {
@@ -14,15 +14,15 @@ import {
   } from "react-router-dom";
 class NavBar2 extends React.Component{
   state={
-    generalArticles:'',
-    sportsArticles :'',
-    businessArticles: '',
-    technologyArticles: '',
-    scienceArticles:'',
+    generalArticles:[],
+    sportsArticles :[],
+    businessArticles: [],
+    technologyArticles: [],
+    scienceArticles:[],
   }
   handleClickGeneral(){
     var url = 'http://newsapi.org/v2/top-headlines?' +
-    'country=eg&' + 'catagory=general&'+
+    'country=ae&' + 'catagory=general&'+
     'apiKey=cc3bbf80787c4c7ea91e7dcc8b051692';
     var req2 = new Request(url);
     let fetchReq2 = fetch(req2);
@@ -36,7 +36,7 @@ class NavBar2 extends React.Component{
   }
   handleClickSports(){
     var url = 'http://newsapi.org/v2/top-headlines?' +
-    'country=us&' + 'catagory=sports&'+
+    'country=ae&' + 'catagory=sports&'+
     'apiKey=cc3bbf80787c4c7ea91e7dcc8b051692';
     var req2 = new Request(url);
     let fetchReq2 = fetch(req2);
@@ -50,7 +50,7 @@ class NavBar2 extends React.Component{
   }
   handleClickBusiness() {
     var url = 'http://newsapi.org/v2/top-headlines?' +
-      'country=us&' + 'catagory=business&' +
+      'country=ae&' + 'catagory=business&' +
       'apiKey=cc3bbf80787c4c7ea91e7dcc8b051692';
     var req2 = new Request(url);
     let fetchReq2 = fetch(req2);
@@ -64,7 +64,7 @@ class NavBar2 extends React.Component{
   }
   handleClickBusiness() {
     var url = 'http://newsapi.org/v2/top-headlines?' +
-      'country=us&' + 'catagory=business&' +
+      'country=ae&' + 'catagory=business&' +
       'apiKey=cc3bbf80787c4c7ea91e7dcc8b051692';
     var req2 = new Request(url);
     let fetchReq2 = fetch(req2);
@@ -78,7 +78,7 @@ class NavBar2 extends React.Component{
   }
   handleClickTechnology() {
     var url = 'http://newsapi.org/v2/top-headlines?' +
-      'country=eg&' + 'catagory=technology&' +
+      'country=ae&' + 'catagory=technology&' +
       'apiKey=cc3bbf80787c4c7ea91e7dcc8b051692';
     var req2 = new Request(url);
     let fetchReq2 = fetch(req2);
@@ -92,7 +92,7 @@ class NavBar2 extends React.Component{
   }
   handleClickScience() {
     var url = 'http://newsapi.org/v2/top-headlines?' +
-      'country=us&' + 'catagory=science&' +
+      'country=ae&' + 'catagory=science&' +
       'apiKey=cc3bbf80787c4c7ea91e7dcc8b051692';
     var req2 = new Request(url);
     let fetchReq2 = fetch(req2);
@@ -110,30 +110,30 @@ class NavBar2 extends React.Component{
         <div>
             <nav>
                 <ul>
-                <li onClick={this.handleClickGeneral.bind(this)}>general</li>
-                <li onClick={this.handleClickSports.bind(this)}>Sports</li>
-                <li onClick={this.handleClickBusiness.bind(this)}>Business</li>
-                <li onClick={this.handleClickTechnology.bind(this)}>Technology</li>
-                <li onClick={this.handleClickScience.bind(this)}>Science</li>
+                <li onClick={this.handleClickGeneral.bind(this)}><Link to="/general">General</Link></li>
+                <li onClick={this.handleClickSports.bind(this)}><Link to="/Sports">Sports</Link></li>
+                <li onClick={this.handleClickBusiness.bind(this)}><Link to="/Business">Business</Link></li>
+                <li onClick={this.handleClickTechnology.bind(this)}><Link to="/Technology">Technology</Link></li>
+                <li onClick={this.handleClickScience.bind(this)}><Link to="/Science">Science</Link></li>
                </ul>
             </nav>
          </div>
              <Switch>
-            <Route exact path='/generals'>
-              <AllNewsGeneral  generals = {this.state.generalArticles} />
+            <Route exact path='/general'>
+              <AllNewsGeneral generalArticles = {this.state.generalArticles} />
             </Route>
-            {/* <Route exact path='/'>
-              <AllNewsSports sports ={this.state.sportsArticles} />
-            </Route> */}
-            {/* <Route exact path='/'>
-              <AllNewsBusiness business ={this.state.businessArticles} />
+            <Route exact path='/Sports'>
+              <AllNewsSports sportsArticles ={this.state.sportsArticles} />
             </Route>
-            <Route exact path='/'>
-              <AllNewsTechnology technologys ={this.state.technologyArticles} />
+            <Route exact path='/Business'>
+              <AllNewsBusiness businessArticles ={this.state.businessArticles} />
             </Route>
-            <Route exact path='/'>
-              <AllNewsScience sciences ={this.state.scienceArticles} />
-            </Route> */}
+            <Route exact path='/Technology'>
+              <AllNewsTechnology technologyArticles ={this.state.technologyArticles} />
+            </Route>
+            <Route exact path='/Science'>
+              <AllNewsScience scienceArticles ={this.state.scienceArticles} />
+            </Route>
             </Switch>
         </Router>
       )

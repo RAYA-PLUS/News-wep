@@ -7,12 +7,12 @@ class AllNewsScience extends React.Component {
 
     }
     render() {
-        const { sciences } = this.props;
+        const { scienceArticles } = this.props;
         return (
             <div>
                 <div>
                     <ul class='ulContainer'>
-                        {sciences.map((science) => (
+                        {scienceArticles.map((science) => (
                             <div className="row">
                                 <div className="col-s12-m7">
                                     <div className="card">

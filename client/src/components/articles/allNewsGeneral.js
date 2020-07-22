@@ -6,12 +6,13 @@ class AllNewsGeneral extends React.Component {
 
     }
     render() {
-        const { generals } = this.props;
+        const { generalArticles } = this.props;
+        console.log(generalArticles);
         return (
             <div>
                 <div>
                     <ul class='ulContainer'>
-                        {generals.map((general) => (
+                        {generalArticles.map((general) => (
                             <div className="row">
                                 <div className="col-s12-m7">
                                     <div className="card">

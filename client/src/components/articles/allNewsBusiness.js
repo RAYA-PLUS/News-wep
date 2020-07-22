@@ -6,12 +6,12 @@ class AllNewsBusiness extends React.Component {
 
     }
     render() {
-        const { business } = this.props;
+        const { businessArticles } = this.props;
         return (
             <div>
                 <div>
                     <ul class='ulContainer'>
-                        {business.map((business) => (
+                        {businessArticles.map((business) => (
                             <div className="row">
                                 <div className="col-s12-m7">
                                     <div className="card">
