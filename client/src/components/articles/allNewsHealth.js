@@ -27,8 +27,9 @@ class AllNewsHealth extends React.Component {
 											/> */}
 											<div className="card-image">
 												<img
+													href={health.url}
 													id="cards-img"
-													class="healthImg"
+													className="healthImg"
 													src={
 														health.urlToImage
 													}></img>
