@@ -4,10 +4,17 @@ nav {
     overflow: hidden;
 } */
 nav {
-      height: 69px;
+    color: #fff;
+    background-color: #880022;
+    width: 100%;
+    height: 56px;
+    line-height: 56px;
 }
 .navbar {
   margin-bottom: -18px;
+}
+.nav_wrapper{
+background-color: #880022;
 }
 nav ul {
   list-style: none;
@@ -24,7 +31,15 @@ nav ul {
 ul {
   list-style: none;
 } */
+.card-title{
+      margin-left: 57px;
 
+}
+
+.slider__slide{
+   width: 350px;
+  height: 200px;
+}
 .headersCard {
   margin: 13px;
   width: 350px;
@@ -161,8 +176,10 @@ strong {
     padding: 8px;
 }
 #cards-img {
-  border-radius: 15px;
-    margin-bottom: 30px;
+    border-radius: 30px;
+    margin-bottom: 61px;
+    margin-top: 20px;
+    padding: 20px;
 }
     
 

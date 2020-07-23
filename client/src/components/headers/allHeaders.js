@@ -77,7 +77,7 @@ class AllHeaders extends React.Component {
 
         return (
             <div>
-                <div style={{ width: "100%", height: "200px" }}>
+                <div style={{ width: "100%", height: "450px" }}>
                     <Slider
                         activeIndex={0}
                         auto={3000}
@@ -88,28 +88,29 @@ class AllHeaders extends React.Component {
                     >
                         {data.map((dataIN, key) => {
                             return (
-                                <div style={{ width: "100%", height: "200px" }}>
-                                    <div
-                                        style={{
-                                            backgroundImage: `url(${dataIN.urlToImage})`,
-                                            height: "200px",
-                                            width: "50%",
-                                            backgroundPosition: "center",
-                                            backgroundSize: "cover",
-                                            marginLeft: "300px",
-                                            padding: "100px",
-                                        }}
-                                    >
-                                        <br></br>
-                                        <a href={dataIN.url} >
-                                            {dataIN.title}
-                                        </a>
-                                    </div>
-                                    <div>
-
-                                    </div>
-                                </div>
-                            );
+								<div style={{ width: "100%", height: "450px" }}>
+									<div
+										style={{
+                                            fontSize: "30px",
+                                            fontStyle:"bold",
+                                            
+										}}>
+										<a href={dataIN.url}>{dataIN.title}</a>
+									</div>
+									<div
+										style={{
+											backgroundImage: `url(${dataIN.urlToImage})`,
+											height: "450px",
+											width: "55%",
+											backgroundPosition: "center",
+											backgroundSize: "cover",
+											marginLeft: "250px",
+											padding: "100px",
+										}}>
+										<br></br>
+									</div>
+								</div>
+							);
                         })}
                     </Slider>
                 </div>
