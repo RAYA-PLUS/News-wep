@@ -5,6 +5,9 @@
 
 /.pnp
 .pnp.js
+ # copys client 
+/.__client
+/._client
 
 # testing
 /coverage

@@ -14,6 +14,7 @@ const { User, Article } = require("../../models");
 // @desc Register user
 // @access Public
 router.post("/newArticle", (req, res) => {
+
   var { title, content, user } = req.body;
   const newArticle = new Article({ title, content, user });
   // Hash password before saving in database
@@ -26,6 +27,7 @@ router.post("/newArticle", (req, res) => {
 
 });
 router.get("/newArticle", (req, res) => {
+
   Article.find({}).then((result) => {
 
     res.json(result)

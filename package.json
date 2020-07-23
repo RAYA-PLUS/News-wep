@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/News-Web-App/News-Web-App#readme",
   "dependencies": {
+    "@farbenmeer/react-spring-slider": "^1.2.1",
     "add": "^2.0.6",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
@@ -33,6 +34,7 @@
     "is-empty": "^1.2.0",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.9.24",
+    "node-sass": "^4.14.1",
     "or": "^0.2.0",
     "passport": "^0.4.1",
     "passport-jwt": "^4.0.0",

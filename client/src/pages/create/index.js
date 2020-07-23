@@ -22,7 +22,7 @@ export default class Create extends Component {
 
     }
     handleClick() {
-        var myReq = new Request('http://localhost:5000/api/users/newArticle');
+        var myReq = new Request('http://localhost:4000/api/users/newArticle');
         fetch(myReq, {
             method: 'POST',
             headers: {
@@ -31,7 +31,7 @@ export default class Create extends Component {
             body: JSON.stringify(this.state),
         })
             .then(data => {
-                console.log('Success:', data);
+                console.log('Success in the post artical:', data);
                 window.location.href = '/articles'
             })
             .catch((error) => {

@@ -5,7 +5,7 @@
 }
 
 .ull{
-  max-height: 300px;
+  max-height: 250px;
   overflow-y: auto;
 }
 .contain{
@@ -21,5 +21,16 @@
 }
 .rigth{
   display: table-cell;
+}
+* {
+  margin-top: 1px;
+}
 
+.col-s12-m7{
+      width: 105.333333%;
+}
+
+
+.card {
+  height: 734px;
 }

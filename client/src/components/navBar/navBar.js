@@ -12,7 +12,7 @@ import axios from "axios";
 import Login from '../../pages/Login'
 import SignUp from '../../pages/SignUp'
 import './style.css'
-
+import NavBar2 from '../navBar2/navBar.js';
 import AllArticles from '../articles/allArticles.js';
 import AllHeaders from '../headers/allHeaders.js';
 import Create from '../../pages/create';
@@ -34,6 +34,7 @@ class NavBar extends React.Component {
             'country=us&' +
             'apiKey=e018037c75ab4c1aa3757d3e457ec977';
 
+
         var req = new Request(url);
         let fetchReq = fetch(req);
         fetchReq.then((data) => data.json()).then((data1) => {
@@ -44,10 +45,12 @@ class NavBar extends React.Component {
 
         var query = this.state.searchValue || 'Web development'; // web development as default search query
         var url2 = 'http://newsapi.org/v2/everything?' +
+
             'q=' + query + '&' +
             'from=2020-07-12&' +
             'sortBy=popularity&' +
             'apiKey=e018037c75ab4c1aa3757d3e457ec977';
+
 
         var req2 = new Request(url2);
         let fetchReq2 = fetch(req2);
@@ -57,7 +60,7 @@ class NavBar extends React.Component {
             this.setState({ articles: data1.articles });
         })
         ////myarticles///
-        axios.get('http://localhost:5000/api/users/newArticle')
+        axios.get('http://localhost:4000/api/users/newArticle')
             .then(data => {
                 console.log('Success:', data.data);
                 this.setState({ myArticles: data.data });
@@ -80,6 +83,7 @@ class NavBar extends React.Component {
             'from=2020-07-12&' +
             'sortBy=popularity&' +
             'apiKey=e018037c75ab4c1aa3757d3e457ec977';
+
 
         var req = new Request(url);
         let fetchReq = fetch(req);
@@ -137,6 +141,9 @@ class NavBar extends React.Component {
                         </ul>
                     </div>
                 </nav>
+                <div id="navBar2">
+                    <NavBar2 />
+                </div>
                 <Switch>
                     <Route exact path='/articles'>
 
