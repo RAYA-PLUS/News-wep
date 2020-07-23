@@ -1,0 +1,16 @@
+.new{
+    margin-right: 6rem;
+    margin-left: 6rem;
+}
+.addBtn{
+    text-decoration: none;
+    background-color:  #ee6e73;
+    border: none;
+    color: white;
+    padding: 10px 50px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}

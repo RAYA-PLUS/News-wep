@@ -3,3 +3,23 @@
   /* background-color: red; */
   width: 730px;
 }
+
+.ull{
+  max-height: 300px;
+  overflow-y: auto;
+}
+.contain{
+  display: table;
+  width: 100%;
+}
+.sub{
+  display: table-row
+}
+.left{
+  display: table-cell;
+
+}
+.rigth{
+  display: table-cell;
+
+}

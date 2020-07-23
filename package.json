@@ -9,6 +9,7 @@
     "client": "npm start --prefix client",
     "server": "nodemon server.js",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "test": "tape test |  tap-spec",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
   "repository": {
@@ -22,19 +23,27 @@
   },
   "homepage": "https://github.com/News-Web-App/News-Web-App#readme",
   "dependencies": {
+    "add": "^2.0.6",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
     "concurrently": "^5.2.0",
     "cors": "^2.8.5",
+    "draft-js": "^0.11.6",
     "express": "^4.17.1",
     "is-empty": "^1.2.0",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.9.24",
+    "or": "^0.2.0",
     "passport": "^0.4.1",
     "passport-jwt": "^4.0.0",
-    "validator": "^13.1.1"
+    "react-draft-wysiwyg": "^1.14.5",
+    "validator": "^13.1.1",
+    "yarn": "^1.22.4"
   },
   "devDependencies": {
-    "nodemon": "^2.0.4"
+    "nodemon": "^2.0.4",
+    "supertest": "^4.0.2",
+    "tap-spec": "^5.0.0",
+    "tape": "^5.0.1"
   }
 }

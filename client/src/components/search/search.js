@@ -1,4 +1,5 @@
 import React from 'react';
+import Articles from '../newArticles';
 
 import './style.css'
 class Search extends React.Component {
@@ -17,13 +18,14 @@ class Search extends React.Component {
     render() {
         const { callbackfromNavBar } = this.props;
         return (
-            <form onSubmit={this.handleSubmit.bind(this)}>
+            <form onSubmit={this.handleSubmit.bind(this)} className="pad">
 
                 <input type='search' name='search' name='searchValue' value={this.state.searchValue} onChange={this.handleChange.bind(this)} className="Search__input" placeholder="Search by keyword"></input>
                 <button type='submit' className="btn waves-effect waves-light" type="submit" name="action">Search Articles</button>
-
+                <Articles />
             </form>
         )
     }
 }
+
 export default Search;
